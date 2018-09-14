@@ -121,7 +121,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.bwf.hiit.workouts.butt.exercises.home.fitness.extensions.CalendarViewPager
+        <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.extensions.CalendarViewPager
             android:id="@+id/calendarViewPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

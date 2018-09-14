@@ -57,7 +57,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/timer_bar_bg" />
 
-                    <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.MyWheelPicker
+                    <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.MyWheelPicker
                         android:id="@+id/num_age"
                         android:layout_width="50dp"
                         android:layout_height="100dp"
@@ -111,7 +111,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/timer_bar_bg" />
 
-                    <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.MyWheelPicker
+                    <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.MyWheelPicker
                         android:id="@+id/num_weight"
                         android:layout_width="50dp"
                         android:layout_height="100dp"
@@ -170,7 +170,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/timer_bar_bg" />
 
-                    <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.MyWheelPicker
+                    <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.MyWheelPicker
                         android:id="@+id/num_feet"
                         android:layout_width="50dp"
                         android:layout_height="100dp"
@@ -213,7 +213,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/timer_bar_bg" />
 
-                    <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.MyWheelPicker
+                    <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.MyWheelPicker
                         android:id="@+id/num_inches"
                         android:layout_width="50dp"
                         android:layout_height="100dp"

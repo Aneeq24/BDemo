@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.bwf.hiit.workouts.butt.exercises.home.fitness"
+        applicationId "com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1

@@ -21,7 +21,7 @@
             app:title="Record"
             app:titleTextColor="#ffff" />
 
-        <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.CalendarView
+        <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.CalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="330dp"

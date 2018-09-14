@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.bwf.hiit.workouts.butt.exercises.home.fitness.extensions.CalendarGridView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.extensions.CalendarGridView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/calendarGridView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

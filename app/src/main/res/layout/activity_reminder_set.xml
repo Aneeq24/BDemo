@@ -67,7 +67,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/timer_bar_bg" />
 
-                    <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.MyWheelPicker
+                    <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.MyWheelPicker
                         android:id="@+id/num_hour"
                         android:layout_width="50dp"
                         android:layout_height="100dp"
@@ -111,7 +111,7 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/timer_bar_bg" />
 
-                    <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.MyWheelPicker
+                    <com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.helpers.MyWheelPicker
                         android:id="@+id/num_min"
                         android:layout_width="50dp"
                         android:layout_height="100dp"
