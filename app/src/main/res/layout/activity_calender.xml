@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/tab_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Record"
+            app:titleTextColor="#ffff" />
+
+        <com.bwf.hiit.workouts.butt.exercises.home.fitness.helpers.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_margin="5dp"
+            android:clickable="false"
+            app:abbreviationsBarColor="#f805a4"
+            app:abbreviationsLabelsColor="#ffff"
+            app:anotherMonthsDaysLabelsColor="#c7c7c7"
+            app:daysLabelsColor="#f805a4"
+            app:headerColor="#f805a4"
+            app:pagesColor="#ffff"
+            app:selectionColor="#f805a4"
+            app:selectionLabelColor="#ffff"
+            app:todayLabelColor="#1afa0a"
+            app:type="one_day_picker" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_records"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

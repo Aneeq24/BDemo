@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_you_number_bg"
+    android:orientation="vertical"
+    tools:context=".fragments.NextFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/baner_Admob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="MEDIUM_RECTANGLE"
+            ads:adUnitId="@string/banner_rect_ad_unit" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".8"
+        android:background="@drawable/pause_screen_image_bg">
+
+
+        <ImageView
+            android:id="@+id/addRestTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/pause_screen_pluse_time_icon" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/restTimer"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:line_count="30"
+                app:line_width="7dp"
+                app:progress_background_color="@color/bgColor"
+                app:progress_end_color="@color/colorPrimary"
+                app:progress_start_color="@color/colorPrimary"
+                app:progress_stroke_cap="round"
+                app:progress_stroke_width="7dp"
+                app:progress_text_color="@color/colorPrimary"
+                app:progress_text_size="20dp"
+                app:style="solid_line" />
+
+            <ImageView
+                android:id="@+id/nf_pauseTimerImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/play_screen_pause_btn" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/pause_screen_skip_icon" />
+
+        <TextView
+            android:id="@+id/nf_exerciseText"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Exercise 1/5 "
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/roboto_bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight=".4"
+        android:background="@drawable/ic_white_round_bar"
+        android:paddingLeft="16sp"
+        android:paddingStart="16sp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="NEXT"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_nextHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEADLINE EXAMPLE"
+                android:textColor="#3d444d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/nf_exerciseImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

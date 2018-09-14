@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Butt Workout</string>
+    <string name="database">7MinWorkOutDB</string>
+
+    <string name="Year">Y</string>
+    <string name="Month">M</string>
+    <string name="Day">D</string>
+
+    <string name="share">Share</string>
+    <string name="workout">WORKOUT</string>
+
+    <string name="welcome_txt">READY FOR A NEW BODY!!!\nSTART YOUR FIRST WORKOUT NOW!</string>
+
+    <string-array name="days_list">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+        <item>Day 5</item>
+        <item>Day 6</item>
+        <item>Day 7</item>
+        <item>Day 8</item>
+        <item>Day 9</item>
+        <item>Day 10</item>
+        <item>Day 11</item>
+        <item>Day 12</item>
+        <item>Day 13</item>
+        <item>Day 14</item>
+        <item>Day 15</item>
+        <item>Day 16</item>
+        <item>Day 17</item>
+        <item>Day 18</item>
+        <item>Day 19</item>
+        <item>Day 20</item>
+        <item>Day 21</item>
+        <item>Day 22</item>
+        <item>Day 23</item>
+        <item>Day 24</item>
+        <item>Day 25</item>
+        <item>Day 26</item>
+        <item>Day 27</item>
+        <item>Day 28</item>
+        <item>Day 29</item>
+        <item>Day 30</item>
+    </string-array>
+
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+
+
+    <string name="npa" translatable="false">npa</string>
+    <string name="hour" translatable="false">Hour</string>
+    <string name="alarm" translatable="false">Alarm</string>
+    <string name="minute" translatable="false">Minute</string>
+    <string name="prefs" translatable="false">Preferences</string>
+    <string name="channel_name" translatable="false">Channel</string>
+    <string name="is_first_run" translatable="false">Is First Run</string>
+    <string name="key_not_found" translatable="false">Key not found</string>
+    <string name="channel_description" translatable="false">Description</string>
+    <string name="publisher_id" translatable="false">pub-6412217023250030</string>
+    <string name="house_ads" translatable="false">https://s3-us-west-2.amazonaws.com/thetaapps/houseAds/House+Ads.json</string>
+    <string name="privacy_policy_url" translatable="false">https://docs.google.com/document/d/1-ZDXRqZfKHd_sWjgrmyLAqoBbGHzGFEYY4OEKhEA6hA/edit</string>
+
+    <string name="app_id" translatable="false">ca-app-pub-2972677223588085~6039115113</string>
+    <string name="native_ad_unit" translatable="false"> </string>
+    <!--<string name="banner_ad_unit" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="banner_ad_unit" translatable="false">ca-app-pub-2972677223588085/6011194959</string>
+    <string name="banner_rect_ad_unit" translatable="false">ca-app-pub-2972677223588085/3931826529</string>
+    <string name="rewarded_ad_unit" translatable="false"> </string>
+    <string name="exit_banner_ad_unit" translatable="false"> </string>
+    <string name="interstitial_ad_unit" translatable="false">ca-app-pub-2972677223588085/3987666840</string>
+
+    <string name="native_facebook" translatable="false">229602274376247_229602351042906</string>
+    <string name="banner_facebook" translatable="false">229602274376247_229602634376211</string>
+    <string name="interstitial_facebook" translatable="false">229602274376247_229602744376200</string>
+
+    <string name="ad">AD</string>
+    <string name="uhoh">Uh-oh…</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose">Choose</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="rate_us">If You Like Our App. Give us Five Star</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About us</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="tts_voice">TTS Voice</string>
+    <string name="more_apps">More Apps</string>
+    <string name="select_app">Select app</string>
+    <string name="absolutely">Absolutely!</string>
+    <string name="arrow_up">Arrow Up Icon</string>
+    <string name="exit_app">Exit Application</string>
+    <string name="design">By improving Design</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="select_language">Select Language</string>
+    <string name="performance">By improving Performance</string>
+    <string name="daily_notification">Daily Notification</string>
+    <string name="type_your_feedback">Type your feedback…</string>
+    <string name="personal_feedback">\nPersonal Feedback:\n</string>
+    <string name="rating_dialog_header">Rating Dialog Header</string>
+    <string name="functionality">By improving Functionality</string>
+    <string name="notification_text">Come On Back! Six Pack Abs Of Your Dreams Await You!!!</string>
+    <string name="improve_design">Need to improve the Design.\n</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="improve_performance">Need to improve the Performance.\n</string>
+    <string name="provide_valid_feedback">Please provide a valid Feedback!</string>
+    <string name="improve_functionality">Need to improve the Functionality.\n</string>
+    <string name="how_can_we_improve">How can we improve the experience?</string>
+    <string name="are_you_sure_to_exit">Are you sure you want to exit the application?</string>
+    <string name="enjoy_our_app">Enjoying our app? If its helpful for you please spread the word by rating us!</string>
+
+    <string name="plan">Plan</string>
+    <string name="day_selected">Day</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="exercie_complete">WORKOUT DONE</string>
+
+    <string name="txt">Health and fitness is really means a lot to our life. Students including all the growing age children must know the importanceof health and fitness.</string>
+
+    <string name="txt_rest">Take a day off. Rest is critical for muscle recovery and growth.</string>
+
+    <string-array name="days_tts">
+        <item>Day 1 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 2 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 3 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 4 </item>
+        <item>Day 5 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 6 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 7 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 8 </item>
+        <item>Day 9 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 10 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 11 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 12 </item>
+        <item>Day 13 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 14 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 15 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 16 </item>
+        <item>Day 16 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 17 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 18 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 19 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 20 </item>
+        <item>Day 21 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 22 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 23 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 24 </item>
+        <item>Day 25 Today We Will Focus on Core and Upper Abs exercises</item>
+        <item>Day 26 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 27 Today We Will Focus on Core and Oblique Abs exercises</item>
+        <item>Day 28 </item>
+        <item>Day 29 Today We Will Focus on Core and Lower Abs exercises</item>
+        <item>Day 30 Today We Will Focus on Core and Oblique Abs exercises</item>
+    </string-array>
+
+</resources>

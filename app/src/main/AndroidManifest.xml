@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bwf.hiit.workouts.butt.exercises.home.fitness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".view.SplashScreeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.PlayingExercise"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.DailyExerciseInfo"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.HomeActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.ScrollingActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receiver.RebootReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.ReminderSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SelectGender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.AgeWeightHeightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ConfirmReminderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.CalenderActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

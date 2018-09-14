@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="wheel_font_path" format="string" />
+    </declare-styleable>
+
+    <dimen name="row_height">44dp</dimen>
+    <declare-styleable name="CalendarView">
+        <attr name="headerColor" format="color" />
+        <attr name="headerLabelColor" format="color" />
+        <attr name="previousButtonSrc" format="integer" />
+        <attr name="forwardButtonSrc" format="integer" />
+        <attr name="todayLabelColor" format="color" />
+        <attr name="selectionColor" format="color" />
+        <attr name="selectionLabelColor" format="color" />
+        <attr name="disabledDaysLabelsColor" format="color" />
+        <attr name="pagesColor" format="color" />
+        <attr name="abbreviationsBarColor" format="color" />
+        <attr name="abbreviationsLabelsColor" format="color" />
+        <attr name="daysLabelsColor" format="color" />
+        <attr name="anotherMonthsDaysLabelsColor" format="color" />
+        <attr name="datePicker" format="boolean" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <attr name="type" format="enum">
+        <enum name="classic" value="0" />
+        <enum name="one_day_picker" value="1" />
+        <enum name="many_days_picker" value="2" />
+        <enum name="range_picker" value="3" />
+    </attr>
+</resources>

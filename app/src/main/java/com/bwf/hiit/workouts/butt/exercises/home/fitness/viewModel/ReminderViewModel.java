@@ -1,0 +1,31 @@
+package com.bwf.hiit.workouts.butt.exercises.home.fitness.viewModel;
+
+import android.app.Application;
+import android.arch.lifecycle.AndroidViewModel;
+import android.arch.lifecycle.LiveData;
+
+import com.bwf.hiit.workouts.butt.exercises.home.fitness.models.Reminder;
+import com.bwf.hiit.workouts.butt.exercises.home.fitness.repository.ReminderRepo;
+
+public class ReminderViewModel extends AndroidViewModel {
+
+    private ReminderRepo mRepository;
+
+    public ReminderViewModel(Application application) {
+        super(application);
+        mRepository = new ReminderRepo();
+    }
+
+    public LiveData<Reminder> getReminder() {
+        return mRepository.getReminder();
+    }
+
+    public void insert(Reminder reminder) {
+        mRepository.insert(reminder);
+    }
+
+    public void update(Reminder reminder) {
+        mRepository.update(reminder);
+    }
+
+}
