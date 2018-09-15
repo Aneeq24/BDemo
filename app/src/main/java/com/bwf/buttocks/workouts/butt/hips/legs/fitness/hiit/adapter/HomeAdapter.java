@@ -20,9 +20,9 @@ import java.util.List;
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.myHolder> {
 
     private String[] title = {"BEGINNER", "INTERMEDIATE", "ADVANCED"};
-    private String[] dis = {"Your Journey towards Ripped Six Pack Abs Start Here...",
+    private String[] dis = { "Your Journey towards Ripped Six Pack Abs Start Here...",
             "Let’s Take Your Six Pack Abs Workout Up A Notch...", "Recommended Abs Workout for Those Who Want a Challenge…"};
-    private int[] image = new int[]{R.drawable.main_screen_beginner_image, R.drawable.main_screen_intermediate_image,
+    private int[] image = new int[]{ R.drawable.main_screen_beginner_image, R.drawable.main_screen_intermediate_image,
             R.drawable.main_screen_advanced_image};
     private List<Integer> progress;
 
@@ -42,26 +42,25 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.myHolder> {
     public void onBindViewHolder(@NonNull myHolder holder, final int position) {
 
         switch (position) {
-            case 0:
+            case 1:
                 holder.imgStar1.setImageResource(R.drawable.main_screen_star_s);
                 break;
-            case 1:
+            case 2:
                 holder.imgStar1.setImageResource(R.drawable.main_screen_star_s);
                 holder.imgStar2.setImageResource(R.drawable.main_screen_star_s);
                 break;
-            case 2:
+            case 3:
                 holder.imgStar1.setImageResource(R.drawable.main_screen_star_s);
                 holder.imgStar2.setImageResource(R.drawable.main_screen_star_s);
                 holder.imgStar3.setImageResource(R.drawable.main_screen_star_s);
                 break;
         }
-
         holder.tvTitle.setText(title[position]);
         holder.tvDis.setText(dis[position]);
         holder.imgMain.setImageResource(image[position]);
-        holder.progressBar.setMax(30);
+        holder.progressBar.setMax(21);
         holder.progressBar.setProgress(progress.get(position));
-        int i = 30 - progress.get(position);
+        int i = 21 - progress.get(position);
         holder.tvDayLeft.setText(i + "");
         holder.tvPercentage.setText((int) (progress.get(position) / 0.3) + "%");
         holder.itemView.setOnClickListener(view -> setOnClick(view, position));
@@ -103,7 +102,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.myHolder> {
 
     private void setOnClick(View view, int position) {
         Intent i = new Intent(view.getContext(), ScrollingActivity.class);
-        i.putExtra(view.getContext().getString(R.string.plan), (position + 1));
+        i.putExtra(view.getContext().getString(R.string.plan), (position));
         view.getContext().startActivity(i);
         AnalyticsManager.getInstance().sendAnalytics("plan_selected" + title[position], "plan_selected_" + title[position]);
     }

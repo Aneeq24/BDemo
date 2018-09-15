@@ -100,9 +100,9 @@ public class HomeFragment extends Fragment {
         protected Void doInBackground(Void... voids) {
             AppDataBase dataBase = AppDataBase.getInstance();
             progress = new ArrayList<>();
-            for (int plan = 1; plan < 4; plan++) {
+            for (int plan = 0; plan < 3; plan++) {
                 int val = 0;
-                for (int i = 1; i <= 30; i++) {
+                for (int i = 1; i <= 21; i++) {
                     if (dataBase.exerciseDayDao().getExerciseDays(plan, i).size() > 0) {
                         int totalComplete = dataBase.exerciseDayDao().getExerciseDays(plan, i).get(0).getExerciseComplete();
                         int totalExercises = dataBase.exerciseDayDao().getExerciseDays(plan, i).get(0).getTotalExercise();

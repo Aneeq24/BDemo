@@ -65,7 +65,7 @@ public class ScrollingActivity extends AppCompatActivity {
         if (intent != null && intent.hasExtra(getString(R.string.plan)))
             plan = intent.getIntExtra(getString(R.string.plan), 0);
 
-        tvTitle.setText(title[plan - 1]);
+        tvTitle.setText(title[plan]);
 
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -86,25 +86,23 @@ public class ScrollingActivity extends AppCompatActivity {
             protected String doInBackground(Void... voids) {
                 try {
                     AppDataBase dataBase = AppDataBase.getInstance();
-
-                    for (int i = 0; i < 30; i++) {
+                    for (int i = 0; i < 21; i++) {
                         if (dataBase.exerciseDayDao().getExerciseDays(plan, i + 1).size() > 0) {
                             int totalComplete = dataBase.exerciseDayDao().getExerciseDays(plan, i + 1).get(0).getExerciseComplete();
                             int totalExercises = dataBase.exerciseDayDao().getExerciseDays(plan, i + 1).get(0).getTotalExercise();
                             float v = (float) totalComplete / (float) totalExercises;
                             mProgress.add(v);
-
                             if (v >= 1) {
                                 val++;
                             }
-                        }else{
+                        } else {
                             mProgress.add(200f);
                         }
                     }
                 } catch (RuntimeException e) {
                     e.printStackTrace();
                 }
-                int dayLeft = 30 - val;
+                int dayLeft = 21 - val;
                 return String.valueOf(dayLeft);
             }
 
@@ -112,9 +110,9 @@ public class ScrollingActivity extends AppCompatActivity {
             protected void onPostExecute(String dayLeft) {
                 super.onPostExecute(dayLeft);
                 initView();
-                circleProgressBarLeft.setMax(30);
+                circleProgressBarLeft.setMax(21);
                 circleProgressBarLeft.setProgress(Integer.parseInt(dayLeft));
-                circleProgressBarCompleted.setMax(30);
+                circleProgressBarCompleted.setMax(21);
                 circleProgressBarCompleted.setProgress(val);
             }
 
@@ -136,12 +134,6 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        AdsManager.getInstance().showFacebookInterstitialAd();
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
         if (paused) {
@@ -152,6 +144,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        AdsManager.getInstance().showFacebookInterstitialAd();
         super.onBackPressed();
     }
 

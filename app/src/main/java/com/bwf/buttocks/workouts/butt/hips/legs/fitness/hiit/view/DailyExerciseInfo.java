@@ -80,10 +80,10 @@ public class DailyExerciseInfo extends AppCompatActivity {
         AdView adView = findViewById(R.id.baner_Admob);
         AdsManager.getInstance().showBanner(adView);
 
-        AdsManager.getInstance().showFacebookInterstitialAd();
+        AdsManager.getInstance().showInterstitialAd();
         AnalyticsManager.getInstance().sendAnalytics("activity_started", "exercise_list_activity");
         String[] dayTTS = context.getResources().getStringArray(R.array.days_tts);
-        TTSManager.getInstance(getApplication()).play(dayTTS[planDay - 1]);
+        TTSManager.getInstance(getApplication()).play(dayTTS[planDay]);
 
         switch (planDay) {
             case 1:
@@ -92,8 +92,6 @@ public class DailyExerciseInfo extends AppCompatActivity {
             case 13:
             case 17:
             case 21:
-            case 25:
-            case 29:
                 imgTitle.setImageResource(R.drawable.lower_abs);
                 break;
             case 2:
@@ -101,9 +99,6 @@ public class DailyExerciseInfo extends AppCompatActivity {
             case 10:
             case 14:
             case 18:
-            case 22:
-            case 26:
-            case 30:
                 imgTitle.setImageResource(R.drawable.obliques);
                 break;
             case 3:
@@ -111,8 +106,6 @@ public class DailyExerciseInfo extends AppCompatActivity {
             case 11:
             case 15:
             case 19:
-            case 23:
-            case 28:
                 imgTitle.setImageResource(R.drawable.upper_abs);
                 break;
         }

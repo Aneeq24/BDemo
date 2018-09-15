@@ -254,5 +254,79 @@
     "calories": 12.63,
     "display": "Quad Stretch",
     "name": "quad_stretch"
+  },
+  {
+    "id": "33",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Cat Cow Stretch",
+    "name": "cat_cow_stretch"
+  },
+  {
+    "id": "34",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Chest Expansions",
+    "name": "chest_expansion"
+  },
+  {
+    "id": "35",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Cobra Stretch",
+    "name": "cobra_stretch"
+  },
+  {
+    "id": "36",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "March Jacks",
+    "name": "march_jacks"
+  },
+  {
+    "id": "37",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Raised Arm Circles",
+    "name": "raised_arm_circles"
+  },
+  {
+    "id": "38",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Seal Jacks",
+    "name": "seal_jacks"
+  },
+  {
+    "id": "39",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Shoulder Stretch",
+    "name": "shoulder_stretch"
+  },
+  {
+    "id": "40",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Side Bend Stretch",
+    "name": "side_bend_stretch"
+  },
+  {
+    "id": "41",
+    "unit": 1,
+    "lang": 1,
+    "calories": 12.63,
+    "display": "Torso Rotation",
+    "name": "torso_rotation"
   }
 ]
+
+

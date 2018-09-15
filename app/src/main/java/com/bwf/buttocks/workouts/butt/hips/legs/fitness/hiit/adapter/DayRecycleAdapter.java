@@ -87,7 +87,7 @@ public class DayRecycleAdapter extends RecyclerView.Adapter<DayRecycleAdapter.my
         Intent i = new Intent(context, DailyExerciseInfo.class);
         i.putExtra(context.getString(R.string.day_selected), position + 1);
         i.putExtra(context.getString(R.string.plan), currentPlan);
-        AnalyticsManager.getInstance().sendAnalytics("day  " + (position + 1) + "of_plan:" + titles[currentPlan - 1], "day_selected_" + (position + 1));
+        AnalyticsManager.getInstance().sendAnalytics("day  " + (position + 1) + "of_plan:" + titles[currentPlan], "day_selected_" + (position + 1));
         context.startActivity(i);
     }
 
@@ -95,7 +95,7 @@ public class DayRecycleAdapter extends RecyclerView.Adapter<DayRecycleAdapter.my
         Intent i = new Intent(context, PlayingExercise.class);
         i.putExtra(context.getString(R.string.day_selected), position + 1);
         i.putExtra(context.getString(R.string.plan), currentPlan);
-        AnalyticsManager.getInstance().sendAnalytics("day  " + (position + 1) + "of_plan:" + titles[currentPlan - 1], "day_selected_" + (position + 1));
+        AnalyticsManager.getInstance().sendAnalytics("day  " + (position + 1) + "of_plan:" + titles[currentPlan], "day_selected_" + (position + 1));
         context.startActivity(i);
     }
 

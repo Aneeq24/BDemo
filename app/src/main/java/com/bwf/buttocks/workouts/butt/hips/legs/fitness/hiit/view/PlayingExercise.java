@@ -101,7 +101,6 @@ public class PlayingExercise extends AppCompatActivity {
                 mListExDays = dataBase.exerciseDayDao().getExerciseDays(currentPlan, currentDay);
 
                 if (mListExDays.size() > 0) {
-
                     for (ExerciseDay day : mListExDays) {
                         totalTimeSpend = totalTimeSpend + day.getReps();
                         totalKcal = totalKcal + AppDataBase.getInstance().exerciseDao().findByIdbg(day.getId()).getCalories();
@@ -180,7 +179,7 @@ public class PlayingExercise extends AppCompatActivity {
         if (!isComplete)
             fragmentManager.beginTransaction().replace(R.id.fragment_container, exerciseFragment, null).commitAllowingStateLoss();
         else {
-            AnalyticsManager.getInstance().sendAnalytics("exercise_complete", "plan_" + title[currentPlan - 1] + "day_" + currentDay + "completed");
+            AnalyticsManager.getInstance().sendAnalytics("exercise_complete", "plan_" + title[currentPlan] + "day_" + currentDay + "completed");
             progressBar.setVisibility(View.GONE);
             Bundle bundle = new Bundle();
             bundle.putBoolean("repeat", false);
@@ -190,7 +189,6 @@ public class PlayingExercise extends AppCompatActivity {
     }
 
     public void PauseFragment(int remaingTime) {
-        AdsManager.getInstance().showFacebookInterstitialAd();
         isPaused = true;
         pauseTimer = remaingTime;
         fragmentManager.beginTransaction().replace(R.id.fragment_container, pauseFragment, null).commitAllowingStateLoss();
@@ -208,7 +206,7 @@ public class PlayingExercise extends AppCompatActivity {
     }
 
     public void onCompleteCheckingNext(boolean isNext) {
-        AnalyticsManager.getInstance().sendAnalytics("exercise_complete", "plan_" + title[currentPlan - 1] + "day_" + currentDay + "exercise_" + (currentEx + 1));
+        AnalyticsManager.getInstance().sendAnalytics("exercise_complete", "plan_" + title[currentPlan] + "day_" + currentDay + "exercise_" + (currentEx + 1));
         mListExDays.get(currentEx).setStatus(true);
         totalExercises = mListExDays.size();
 
@@ -278,10 +276,10 @@ public class PlayingExercise extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         if (mListExDays.size() > 0) {
-            AnalyticsManager.getInstance().sendAnalytics("Exercise_Screen_End", "plan_" + title[currentPlan - 1] + "day_" +
+            AnalyticsManager.getInstance().sendAnalytics("Exercise_Screen_End", "plan_" + title[currentPlan] + "day_" +
                     currentDay + "exercises_" + mListExDays.get(0).getExerciseComplete());
         } else {
-            AnalyticsManager.getInstance().sendAnalytics("Exercise_Screen_End", "plan_" + title[currentPlan - 1] + "day_" +
+            AnalyticsManager.getInstance().sendAnalytics("Exercise_Screen_End", "plan_" + title[currentPlan] + "day_" +
                     currentDay + "rest_time");
         }
         resetStaticPauseValues();
