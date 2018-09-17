@@ -24,6 +24,7 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.view.CalenderActivi
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 public class HomeFragment extends Fragment {
@@ -45,6 +46,8 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
         context = getContext();
+        Objects.requireNonNull(getActivity()).setTitle("Workout");
+
         tvExerciseNo = rootView.findViewById(R.id.tv_exercise);
         tvTotalMin = rootView.findViewById(R.id.tv_time);
         tvTotalTime = rootView.findViewById(R.id.tv_mins);

@@ -52,6 +52,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 
 public class RecordFragment extends Fragment {
@@ -77,6 +78,8 @@ public class RecordFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_record, container, false);
         context = getContext();
+
+        Objects.requireNonNull(getActivity()).setTitle("Report");
 
         tvMon = rootView.findViewById(R.id.tv_mon);
         tvBmi = rootView.findViewById(R.id.tv_bmi);
