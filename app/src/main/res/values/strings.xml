@@ -83,11 +83,11 @@
     <string name="banner_rect_ad_unit" translatable="false">ca-app-pub-2972677223588085/3931826529</string>
     <string name="rewarded_ad_unit" translatable="false"> </string>
     <string name="exit_banner_ad_unit" translatable="false"> </string>
-    <string name="interstitial_ad_unit" translatable="false">ca-app-pub-2972677223588085/3987666840</string>
 
-    <string name="native_facebook" translatable="false">326485758102616_326485888102603</string>
-    <string name="banner_facebook" translatable="false">326485758102616_326486234769235</string>
-    <string name="interstitial_facebook" translatable="false">326485758102616_326486424769216</string>
+    <string name="AM_Int_Main_Menu">ca-app-pub-2972677223588085/3987666840</string>
+    <string name="AM_Int_Workout_End">ca-app-pub-2972677223588085/1925166160</string>
+
+    <string name="FB_Int_Exercise_List">326485758102616_326486424769216</string>
 
     <string name="ad">AD</string>
     <string name="uhoh">Uh-oh…</string>

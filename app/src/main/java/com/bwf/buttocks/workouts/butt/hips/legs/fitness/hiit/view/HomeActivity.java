@@ -91,7 +91,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         mBilling = new MyBilling(this);
         mBilling.onCreate();
 
-        AdsManager.getInstance().showFacebookInterstitialAd();
+        AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Main_Menu));
         AnalyticsManager.getInstance().sendAnalytics("activity_started", "plan_screen_activity");
 
         workOut = findViewById(R.id.workout_record);
@@ -147,9 +147,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         bottomNavigation.setAccentColor(Color.parseColor("#f805a4"));
 
         bottomNavigation.setOnTabSelectedListener((position, wasSelected) -> {
-            if (position == 0)
+            if (position == 0) {
                 selectFragment(homeFragment);
-            else if (position == 1)
+                AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Main_Menu));
+            } else if (position == 1)
                 selectFragment(recordFragment);
             else if (position == 2)
                 mBilling.purchaseRemoveAds();

@@ -5,6 +5,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Squats",
+    "tts": "",
     "name": "squats"
   },
   {
@@ -13,6 +14,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Plank Back Kick Left",
+    "tts": "",
     "name": "plank_back_kick_left"
   },
   {
@@ -21,6 +23,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Plank Back Kicks Right",
+    "tts": "",
     "name": "plank_back_kick_right"
   },
   {
@@ -29,6 +32,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Lunge Step-ups Left",
+    "tts": "",
     "name": "lunge_step_up_left"
   },
   {
@@ -37,6 +41,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Lunge Step-ups Right",
+    "tts": "",
     "name": "lunge_step_up_right"
   },
   {
@@ -45,6 +50,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Single Leg Bridges Left",
+    "tts": "",
     "name": "single_leg_bridge_left"
   },
   {
@@ -53,6 +59,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Single Leg Bridges Right",
+    "tts": "",
     "name": "single_leg_bridge_right"
   },
   {
@@ -61,6 +68,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Glute Bridge",
+    "tts": "",
     "name": "glute_bridge"
   },
   {
@@ -69,6 +77,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Donkey Kicks Left",
+    "tts": "",
     "name": "donkey_kick_left"
   },
   {
@@ -77,6 +86,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Donkey Kicks Right",
+    "tts": "",
     "name": "donkey_kick_right"
   },
   {
@@ -85,6 +95,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Hip Thrust",
+    "tts": "",
     "name": "hip_thrust"
   },
   {
@@ -93,6 +104,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Plie Squat",
+    "tts": "",
     "name": "plie_squat"
   },
   {
@@ -101,6 +113,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Side Lying Leg Lift Left",
+    "tts": "",
     "name": "side_lying_leg_lift_left"
   },
   {
@@ -109,6 +122,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Side Lying Leg Lift Right",
+    "tts": "",
     "name": "side_lying_leg_lift_right"
   },
   {
@@ -117,6 +131,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Lunges Left",
+    "tts": "",
     "name": "lunges_left"
   },
   {
@@ -125,6 +140,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Lunges Right",
+    "tts": "",
     "name": "lunges_right"
   },
   {
@@ -133,6 +149,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Side Skaters",
+    "tts": "",
     "name": "side_skaters"
   },
   {
@@ -141,6 +158,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Split Squat Left",
+    "tts": "",
     "name": "split_squat_left"
   },
   {
@@ -149,6 +167,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Split Squat Right",
+    "tts": "",
     "name": "split_squat_right"
   },
   {
@@ -157,6 +176,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Diagonal Squat Left",
+    "tts": "",
     "name": "diagonal_squat_left"
   },
   {
@@ -165,6 +185,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Diagonal Squat Right",
+    "tts": "",
     "name": "diagonal_squat_right"
   },
   {
@@ -173,6 +194,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Single Leg Deadlift Left",
+    "tts": "",
     "name": "single_leg_deadlift_left"
   },
   {
@@ -181,6 +203,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Single Leg Deadlift Right",
+    "tts": "",
     "name": "single_leg_deadlift_right"
   },
   {
@@ -189,6 +212,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Elevated Split Squat Left",
+    "tts": "",
     "name": "elevated_split_squat_left"
   },
   {
@@ -197,6 +221,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Elevated Split Squat Right",
+    "tts": "",
     "name": "elevated_split_squat_right"
   },
   {
@@ -205,6 +230,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Fire Hydrant Left",
+    "tts": "",
     "name": "fire_hydrant_left"
   },
   {
@@ -213,6 +239,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Fire Hydrant Right",
+    "tts": "",
     "name": "fire_hydrant_right"
   },
   {
@@ -221,6 +248,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Abductor Strech ",
+    "tts": "",
     "name": "abductor_stretch"
   },
   {
@@ -229,6 +257,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Squat With Jumping Jacks",
+    "tts": "",
     "name": "squat_jumping_jacks"
   },
   {
@@ -237,6 +266,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Hop Side To Side",
+    "tts": "",
     "name": "hop_side_to_side"
   },
   {
@@ -245,6 +275,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Pelvic Stretch",
+    "tts": "",
     "name": "pelvic_stretch"
   },
   {
@@ -253,6 +284,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Quad Stretch",
+    "tts": "",
     "name": "quad_stretch"
   },
   {
@@ -261,6 +293,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Cat Cow Stretch",
+    "tts": "",
     "name": "cat_cow_stretch"
   },
   {
@@ -269,6 +302,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Chest Expansions",
+    "tts": "",
     "name": "chest_expansion"
   },
   {
@@ -277,6 +311,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Cobra Stretch",
+    "tts": "",
     "name": "cobra_stretch"
   },
   {
@@ -285,6 +320,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "March Jacks",
+    "tts": "",
     "name": "march_jacks"
   },
   {
@@ -293,6 +329,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Raised Arm Circles",
+    "tts": "",
     "name": "raised_arm_circles"
   },
   {
@@ -301,6 +338,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Seal Jacks",
+    "tts": "",
     "name": "seal_jacks"
   },
   {
@@ -309,6 +347,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Shoulder Stretch",
+    "tts": "",
     "name": "shoulder_stretch"
   },
   {
@@ -317,6 +356,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Side Bend Stretch",
+    "tts": "",
     "name": "side_bend_stretch"
   },
   {
@@ -325,6 +365,7 @@
     "lang": 1,
     "calories": 12.63,
     "display": "Torso Rotation",
+    "tts": "",
     "name": "torso_rotation"
   }
 ]

@@ -106,7 +106,7 @@ public class CompleteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_complete, container, false);
         context = getContext();
 
-        AdsManager.getInstance().showFacebookInterstitialAd();
+        AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Workout_End));
 
         AdView adView = view.findViewById(R.id.baner_Admob);
         AdsManager.getInstance().showBanner(adView);

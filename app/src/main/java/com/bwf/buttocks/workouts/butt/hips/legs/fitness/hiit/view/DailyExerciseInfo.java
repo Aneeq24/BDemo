@@ -16,7 +16,6 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.adapter.DailyExerci
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.database.AppDataBase;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.AdsManager;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.AnalyticsManager;
-import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.TTSManager;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.Exercise;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.ExerciseDay;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.utils.Utils;
@@ -77,10 +76,9 @@ public class DailyExerciseInfo extends AppCompatActivity {
         AdView adView = findViewById(R.id.baner_Admob);
         AdsManager.getInstance().showBanner(adView);
 
-        AdsManager.getInstance().showInterstitialAd();
+        AdsManager.getInstance().showFacebookInterstitial(getString(R.string.FB_Int_Exercise_List),true);
+
         AnalyticsManager.getInstance().sendAnalytics("activity_started", "exercise_list_activity");
-        String[] dayTTS = context.getResources().getStringArray(R.array.days_tts);
-        TTSManager.getInstance(getApplication()).play(dayTTS[planDay]);
 
         rvDayExercise.setLayoutManager(new LinearLayoutManager(context));
         mAdapter = new DailyExerciseAdapter(this);
