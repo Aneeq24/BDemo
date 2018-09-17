@@ -175,7 +175,6 @@ public class AdsManager {
                 fbInterstitialAd.show();
             } else {
                 loadFacebookInterstitialAd();
-                showInterstitialAd();
             }
         }
     }
