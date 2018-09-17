@@ -21,7 +21,7 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.User;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.Weight;
 
 
-@Database(entities = {ExerciseDay.class , Exercise.class ,User.class, Record.class, Reminder.class, Weight.class}, version = 3 ,exportSchema = false)
+@Database(entities = {ExerciseDay.class , Exercise.class ,User.class, Record.class, Reminder.class, Weight.class}, version = 1 ,exportSchema = false)
 public abstract class AppDataBase extends RoomDatabase {
 
     private static AppDataBase appDataBase;

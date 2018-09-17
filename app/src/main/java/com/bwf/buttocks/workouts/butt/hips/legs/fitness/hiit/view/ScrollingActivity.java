@@ -144,7 +144,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AdsManager.getInstance().showFacebookInterstitialAd();
+        AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Main_Menu));
         super.onBackPressed();
     }
 

@@ -20,7 +20,6 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.PlanDays;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.Reminder;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.User;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.utils.JsonUtils;
-import com.facebook.stetho.Stetho;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -40,7 +39,7 @@ public class SplashScreeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         context = this;
         AnalyticsManager.getInstance().sendAnalytics("splash_screen_started", "activity_started");
-        Stetho.initializeWithDefaults(this);
+//        Stetho.initializeWithDefaults(this);
         new AppDbCheckingTask().execute();
     }
 

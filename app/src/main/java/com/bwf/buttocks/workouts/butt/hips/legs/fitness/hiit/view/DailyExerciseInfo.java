@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.R;
@@ -17,7 +16,6 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.adapter.DailyExerci
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.database.AppDataBase;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.AdsManager;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.AnalyticsManager;
-import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.TTSManager;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.Exercise;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.ExerciseDay;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.utils.Utils;
@@ -54,8 +52,6 @@ public class DailyExerciseInfo extends AppCompatActivity {
     TextView tvKcal;
     @BindView(R.id.tv_Title)
     TextView tvTitle;
-    @BindView(R.id.img_title)
-    ImageView imgTitle;
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -80,35 +76,9 @@ public class DailyExerciseInfo extends AppCompatActivity {
         AdView adView = findViewById(R.id.baner_Admob);
         AdsManager.getInstance().showBanner(adView);
 
-        AdsManager.getInstance().showInterstitialAd();
-        AnalyticsManager.getInstance().sendAnalytics("activity_started", "exercise_list_activity");
-        String[] dayTTS = context.getResources().getStringArray(R.array.days_tts);
-        TTSManager.getInstance(getApplication()).play(dayTTS[planDay]);
+        AdsManager.getInstance().showFacebookInterstitial(getString(R.string.FB_Int_Exercise_List),true);
 
-        switch (planDay) {
-            case 1:
-            case 5:
-            case 9:
-            case 13:
-            case 17:
-            case 21:
-                imgTitle.setImageResource(R.drawable.lower_abs);
-                break;
-            case 2:
-            case 6:
-            case 10:
-            case 14:
-            case 18:
-                imgTitle.setImageResource(R.drawable.obliques);
-                break;
-            case 3:
-            case 7:
-            case 11:
-            case 15:
-            case 19:
-                imgTitle.setImageResource(R.drawable.upper_abs);
-                break;
-        }
+        AnalyticsManager.getInstance().sendAnalytics("activity_started", "exercise_list_activity");
 
         rvDayExercise.setLayoutManager(new LinearLayoutManager(context));
         mAdapter = new DailyExerciseAdapter(this);

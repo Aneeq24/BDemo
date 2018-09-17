@@ -106,7 +106,7 @@ public class CompleteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_complete, container, false);
         context = getContext();
 
-        AdsManager.getInstance().showFacebookInterstitialAd();
+        AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Workout_End));
 
         AdView adView = view.findViewById(R.id.baner_Admob);
         AdsManager.getInstance().showBanner(adView);
@@ -468,10 +468,10 @@ public class CompleteFragment extends Fragment {
         // set the line to be drawn like this "- - - - - -"
         set.enableDashedLine(10f, 0f, 0f);
         set.enableDashedHighlightLine(10f, 0f, 0f);
-        set.setColor(Color.parseColor("#00aeef"));
-        set.setCircleColor(Color.parseColor("#00aeef"));
+        set.setColor(Color.parseColor("#1de1b2"));
+        set.setCircleColor(Color.parseColor("#1de1b2"));
         set.setLineWidth(1f);
-        set.setValueTextColor(Color.parseColor("#00aeef"));
+        set.setValueTextColor(Color.parseColor("#1de1b2"));
         set.setCircleRadius(3f);
         set.setDrawCircleHole(false);
         set.setValueTextSize(9f);
@@ -484,7 +484,7 @@ public class CompleteFragment extends Fragment {
             Drawable drawable = ContextCompat.getDrawable(context, R.drawable.fade_green);
             set.setFillDrawable(drawable);
         } else {
-            set.setFillColor(Color.parseColor("#00aeef"));
+            set.setFillColor(Color.parseColor("#1de1b2"));
         }
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(set); // add the datasets
@@ -548,9 +548,9 @@ public class CompleteFragment extends Fragment {
         set = new BarDataSet(values, "kcal");
         set.setDrawIcons(false);
         // set the line to be drawn like this "- - - - - -"
-        set.setColor(Color.parseColor("#FF671C"));
+        set.setColor(Color.parseColor("#1de1b2"));
 
-        set.setValueTextColor(Color.parseColor("#FF671C"));
+        set.setValueTextColor(Color.parseColor("#1de1b2"));
         set.setValueTextSize(9f);
         set.setFormLineWidth(1f);
         set.setFormLineDashEffect(new DashPathEffect(new float[]{10f, 5f}, 0f));

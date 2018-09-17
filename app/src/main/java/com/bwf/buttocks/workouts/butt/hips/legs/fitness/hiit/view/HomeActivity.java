@@ -91,7 +91,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         mBilling = new MyBilling(this);
         mBilling.onCreate();
 
-        AdsManager.getInstance().showFacebookInterstitialAd();
+        AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Main_Menu));
         AnalyticsManager.getInstance().sendAnalytics("activity_started", "plan_screen_activity");
 
         workOut = findViewById(R.id.workout_record);
@@ -144,12 +144,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         bottomNavigation.setCurrentItem(0);
         bottomNavigation.setAccentColor(R.color.orange);
         bottomNavigation.setTranslucentNavigationEnabled(true);
-        bottomNavigation.setAccentColor(Color.parseColor("#00BFF3"));
+        bottomNavigation.setAccentColor(Color.parseColor("#f805a4"));
 
         bottomNavigation.setOnTabSelectedListener((position, wasSelected) -> {
-            if (position == 0)
+            if (position == 0) {
                 selectFragment(homeFragment);
-            else if (position == 1)
+                AdsManager.getInstance().showInterstitialAd(getString(R.string.AM_Int_Main_Menu));
+            } else if (position == 1)
                 selectFragment(recordFragment);
             else if (position == 2)
                 mBilling.purchaseRemoveAds();
@@ -169,7 +170,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private void selectFragment(Fragment fragment) {
         FragmentTransaction ft;
         ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.main_screen, fragment).commit();
+        ft.replace(R.id.main_screen, fragment).commitAllowingStateLoss();
     }
 
     @SuppressLint("SetTextI18n")
@@ -189,7 +190,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void onBackPressed() {
-        isAppInBackground = true;
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -201,6 +201,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .setCancelable(false)
                     .setPositiveButton("YES", (dialog, id) -> {
                         dialog.cancel();
+                        isAppInBackground = true;
                         finish();
                     }).setNeutralButton("Rate Us", (dialog, id) -> {
                 dialog.cancel();
@@ -209,6 +210,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        isAppInBackground = true;
     }
 
     @Override
@@ -222,7 +229,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         super.onResume();
         if (paused) {
             paused = false;
-            selectFragment(homeFragment);
         }
     }
 
@@ -247,7 +253,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     }
                 } else {
                     if (!isAppLaunch) {
-                        showPrivacyPolicy();
+                        if (!isAppInBackground)
+                            showPrivacyPolicy();
                     }
                 }
             }
