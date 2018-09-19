@@ -21,6 +21,7 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.adapter.HomeAdapter
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.database.AppDataBase;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.managers.AdsManager;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.view.CalenderActivity;
+import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.view.HomeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
         context = getContext();
-        Objects.requireNonNull(getActivity()).setTitle("Workout");
+        HomeActivity.tvTitle.setText("Workout");
 
         tvExerciseNo = rootView.findViewById(R.id.tv_exercise);
         tvTotalMin = rootView.findViewById(R.id.tv_time);

@@ -42,14 +42,14 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.myHolder> {
     public void onBindViewHolder(@NonNull myHolder holder, final int position) {
 
         switch (position) {
-            case 1:
+            case 0:
                 holder.imgStar1.setImageResource(R.drawable.main_screen_star_s);
                 break;
-            case 2:
+            case 1:
                 holder.imgStar1.setImageResource(R.drawable.main_screen_star_s);
                 holder.imgStar2.setImageResource(R.drawable.main_screen_star_s);
                 break;
-            case 3:
+            case 2:
                 holder.imgStar1.setImageResource(R.drawable.main_screen_star_s);
                 holder.imgStar2.setImageResource(R.drawable.main_screen_star_s);
                 holder.imgStar3.setImageResource(R.drawable.main_screen_star_s);

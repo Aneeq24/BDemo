@@ -30,6 +30,7 @@ import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.Record;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.User;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.models.Weight;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.view.CalenderActivity;
+import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.view.HomeActivity;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.viewModel.RecordViewModel;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.viewModel.UserViewModel;
 import com.bwf.buttocks.workouts.butt.hips.legs.fitness.hiit.viewModel.WeightViewModel;
@@ -79,7 +80,7 @@ public class RecordFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_record, container, false);
         context = getContext();
 
-        Objects.requireNonNull(getActivity()).setTitle("Report");
+        HomeActivity.tvTitle.setText("Report");
 
         tvMon = rootView.findViewById(R.id.tv_mon);
         tvBmi = rootView.findViewById(R.id.tv_bmi);
@@ -89,6 +90,7 @@ public class RecordFragment extends Fragment {
         btnEditBmi = rootView.findViewById(R.id.btn_edit_bmi);
         graphWeight = rootView.findViewById(R.id.graph_weight);
         btnEditWeight = rootView.findViewById(R.id.btn_edit_weight);
+
 
         mUserViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
         mRecordViewModel = ViewModelProviders.of(this).get(RecordViewModel.class);

@@ -67,6 +67,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private HomeFragment homeFragment = new HomeFragment();
     private RecordFragment recordFragment = new RecordFragment();
 
+    @SuppressLint("StaticFieldLeak")
+    public static TextView tvTitle;
     TextView workOut;
     TextView reminder;
     TextView feedback;
@@ -106,6 +108,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         tvTotalMin = findViewById(R.id.tv_time);
         tvTotalTime = findViewById(R.id.tv_mins);
         tvKcal = findViewById(R.id.tv_kcal);
+        tvTitle = findViewById(R.id.tv_Title);
 
         noAds.setOnClickListener(this);
         workOut.setOnClickListener(this);
