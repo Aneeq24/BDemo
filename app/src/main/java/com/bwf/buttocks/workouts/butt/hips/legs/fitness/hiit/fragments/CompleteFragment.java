@@ -582,7 +582,7 @@ public class CompleteFragment extends Fragment {
     }
 
     private String getPlanName() {
-        int i = playingExercise.currentPlan - 1;
+        int i = playingExercise.currentPlan;
         switch (i) {
             case 0:
                 return "Beginner";
