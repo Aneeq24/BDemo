@@ -8,8 +8,8 @@
     android:background="#f805a4"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".view.ScrollingActivity"
-    tools:showIn="@layout/activity_scrolling">
+    tools:context=".view.HomeActivity"
+    tools:showIn="@layout/activity_home">
 
     <RelativeLayout
         android:id="@+id/btn_edit_bmi"
